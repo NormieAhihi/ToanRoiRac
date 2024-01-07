@@ -3,6 +3,32 @@ using namespace std;
 
 // Sinh ke tiep 
 int n, a[1000], check;
+
+void khoitao();
+void sinh();
+
+int main() { 
+    int flag=1; 
+    int k; 
+    cout << "Nhap so phan tu cua tap hop: ";
+	cin >> n;
+	cout << "Nhap thu tu cua hoan vi: "; 
+	cin >> k;  
+	check=1; 
+	khoitao();
+	while(check && flag<k) {
+	    sinh();
+	    flag++;
+	    if(flag==k) {
+	    	cout << "\nHoan vi thu " << k << " cua tap " << n << " phan tu la: "; 
+		    for(int i=1;i<=n;i++) {
+		        cout << a[i];	
+	        } break; 
+	    } 
+    } 
+	return 0; 
+} 
+
 void khoitao() {
 for(int i=1;i<=n;i++) {
 		a[i]=i; 
@@ -31,33 +57,28 @@ void sinh() {
 	} 
 } 
 
-int main() { 
-    int flag=1; 
-    int k; 
-	cin >> n >> k; 
-	check=1; 
-	khoitao();
-	while(check && flag<k) {
-	    sinh();
-	    flag++;
-	    if(flag==k) {
-		    for(int i=1;i<=n;i++) {
-		        cout << a[i];	
-	        } break; 
-	    } 
-    } 
-	return 0; 
-} 
-
 
 // Quay lui 
 //int n, used[100], x[100]; 
+
+//void inkq();
+//void Try(int i);
+
+//int main() {
+//	for(int j=1;j<=k;j++) {
+//		used[j]=0; 
+//	} 
+//	cin >> n >> k; 
+//	Try(1); 
+//	return 0; 
+//} 
+
 //void inkq() {
 //	for(int i=1;i<=n;i++) {
 //		cout << x[i]; 
 //	} cout << endl; 
 //} 
-
+//
 //void Try(int i) {
 //	for(int j=1;j<=n;j++) {
 //		if(used[j]==0) {
@@ -70,15 +91,6 @@ int main() {
 //			} used[j]=0; 
 //		} 
 //	} 
-//} 
-
-//int main() {
-//	for(int j=1;j<=k;j++) {
-//		used[j]=0; 
-//	} 
-//	cin >> n >> k; 
-//	Try(1); 
-//	return 0; 
 //} 
 
 
