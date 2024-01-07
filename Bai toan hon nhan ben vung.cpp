@@ -8,12 +8,21 @@ bool wPreferM1OverM(int prefer[2*N][N], int w, int m, int m1);
 void stableMarriage(int prefer[2*N][N]);
 
 int main() {
-	int prefer[2*N][N]; 
-	for(int i = 0;i < 2*N;i++) {
-		for(int j = 0;j < N;j++) {
-			cin >> prefer[i][j]; 
-		} 
-	} 
+//	int prefer[2*N][N]; 
+//	for(int i = 0;i < 2*N;i++) {
+//		for(int j = 0;j < N;j++) {
+//			cin >> prefer[i][j]; 
+//		} 
+//	} 
+    int prefer[2*N][N] = { {7, 5, 6, 4},
+        {5, 4, 6, 7},
+        {4, 5, 6, 7},
+        {4, 5, 6, 7},
+        {0, 1, 2, 3},
+        {0, 1, 2, 3},
+        {0, 1, 2, 3},
+        {0, 1, 2, 3},
+    };
 	stableMarriage(prefer); 
 	return 0; 
 } 
@@ -64,3 +73,4 @@ void stableMarriage(int prefer[2*N][N]) {
 		cout << " " << i+N << "\t" << wPartner[i] << endl; 
 	} 
 } 
+
