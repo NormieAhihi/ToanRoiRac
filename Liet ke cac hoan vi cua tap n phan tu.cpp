@@ -60,12 +60,25 @@ void sinh() {
 
 // Quay lui 
 //int n, used[100], x[100]; 
+
+//void inkq();
+//void Try(int i);
+
+//int main() {
+//	for(int j=1;j<=k;j++) {
+//		used[j]=0; 
+//	} 
+//	cin >> n >> k; 
+//	Try(1); 
+//	return 0; 
+//} 
+
 //void inkq() {
 //	for(int i=1;i<=n;i++) {
 //		cout << x[i]; 
 //	} cout << endl; 
 //} 
-
+//
 //void Try(int i) {
 //	for(int j=1;j<=n;j++) {
 //		if(used[j]==0) {
@@ -80,14 +93,6 @@ void sinh() {
 //	} 
 //} 
 
-//int main() {
-//	for(int j=1;j<=k;j++) {
-//		used[j]=0; 
-//	} 
-//	cin >> n >> k; 
-//	Try(1); 
-//	return 0; 
-//} 
 
 
 

@@ -48,7 +48,7 @@ void Try(int i);
 int main() {
 	cout << "Nhap gia tri cua n: "; 
  	cin >> n;
- 	cout << "Cac day nhi phan do dai " << n << " la:\n"; 
+ 	cout << "\nCac day nhi phan do dai " << n << " la:\n"; 
 	Try(1); 
  	return 0; 
 } 

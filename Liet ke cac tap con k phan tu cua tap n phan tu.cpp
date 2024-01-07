@@ -53,7 +53,7 @@ int main() {
  	cout << "Nhap gia tri cua k: ";
 	cin >> k; 
 	x[0] = 0; 
-	cout << "Cac tap con " << k << " phan tu cua tap " << n << " phan tu la: \n"; 
+	cout << "\nCac tap con " << k << " phan tu cua tap " << n << " phan tu la: \n"; 
 	Try(1); 
  	return 0; 
 } 
