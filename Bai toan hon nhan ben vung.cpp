@@ -74,4 +74,3 @@ void stableMarriage(int prefer[2*N][N]) {
 	} 
 } 
 
-
