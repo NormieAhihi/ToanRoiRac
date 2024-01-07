@@ -3,6 +3,32 @@ using namespace std;
 
 // Sinh ke tiep 
 int n, a[1000], check;
+
+void khoitao();
+void sinh();
+
+int main() { 
+    int flag=1; 
+    int k; 
+    cout << "Nhap so phan tu cua tap hop: ";
+	cin >> n;
+	cout << "Nhap thu tu cua hoan vi: "; 
+	cin >> k;  
+	check=1; 
+	khoitao();
+	while(check && flag<k) {
+	    sinh();
+	    flag++;
+	    if(flag==k) {
+	    	cout << "\nHoan vi thu " << k << " cua tap " << n << " phan tu la: "; 
+		    for(int i=1;i<=n;i++) {
+		        cout << a[i];	
+	        } break; 
+	    } 
+    } 
+	return 0; 
+} 
+
 void khoitao() {
 for(int i=1;i<=n;i++) {
 		a[i]=i; 
@@ -29,24 +55,6 @@ void sinh() {
 			--r; 
 		} 
 	} 
-} 
-
-int main() { 
-    int flag=1; 
-    int k; 
-	cin >> n >> k; 
-	check=1; 
-	khoitao();
-	while(check && flag<k) {
-	    sinh();
-	    flag++;
-	    if(flag==k) {
-		    for(int i=1;i<=n;i++) {
-		        cout << a[i];	
-	        } break; 
-	    } 
-    } 
-	return 0; 
 } 
 
 
